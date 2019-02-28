@@ -1,0 +1,72 @@
+body {
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #245463;
+	opacity: .6;
+	width: 100%;
+	height: ;
+	z-index: 1
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	border: outset;
+	z-index: 3;
+}
+
+.heading {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  font-family: monospace;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 3;
+}
+
+
+#container {
+  display: flex;
+  height: 812px;
+  flex-wrap: wrap; 
+  margin-top: 100px;   
+  }
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#card {
+  margin: 10px;
+  width: 100%;
+  height: %;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

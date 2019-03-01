@@ -71,7 +71,6 @@ img {
 .flip-card-inner {
   position: relative;
   width: 100%;
-  height: %;
   text-align: center;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -280,7 +279,6 @@ and (orientation : landscape) {
 #footer1 {
     margin-top: 100px;
 }
-
 }
 
 

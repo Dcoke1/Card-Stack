@@ -1,17 +1,17 @@
+/** ========GLobal Styling ========**/
+
 body {
-  font-family: Roboto, Arial, sans-serif;
   width: 100%;
+  background: rgb(49, 113, 127, .5);
 }
 
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: #245463;
-	opacity: .6;
-	width: 100%;
-	height: ;
-	z-index: 1
+h1 {
+  color: rgb(49, 113, 127, .5);
+}
+h2 {
+  color: whitesmoke;
+  font-family: fantasy;
+  font-weight: bold;
 }
 
 header {
@@ -20,40 +20,51 @@ header {
 	left: 0;
 	width: 100%;
 	height: 100px;
-	background-color: white;
+	background-color: whitesmoke;
 	border: outset;
 	z-index: 3;
 }
 
+/** ========Nav Bar Styling ========**/
 .heading {
   position: absolute;
   width: 100%;
   height: 50%;
-  font-family: monospace;
-  font-size: 2rem;
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   overflow: hidden;
   z-index: 3;
 }
 
 
+/** ========Card Container Styling ========**/
 #container {
   display: flex;
   width: 100%;
-  height: 812px;
-  flex-direction: column; 
+  flex-wrap: wrap;
+  flex-direction: row; 
   margin-top: 100px;   
   }
 
-
-.flip-card {
-  background-color: transparent;
-  margin: 10px;
+/** ========Individual Card Side Styling ========**/  
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: ;
+  height: 215px;
+}
+
+.card {
+  background-color: transparent;
+  opacity: .85;
+  margin: 20px;
+  width: 90%;
   perspective: 1000px;
 }
 
@@ -62,35 +73,143 @@ header {
   width: 100%;
   height: %;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 1s;
   transform-style: preserve-3d;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); 
 }
 
-.flip-card:hover .flip-card-inner {
+.card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
 .flip-card-front, .flip-card-back {
   position: relative;
   width: 100%;
-  height: %;
+  height: 13vh;
   backface-visibility: hidden;
 }
 
 .flip-card-front {
   background-color: ;
-  color: black;
   z-index: 1;
 }
 
 .flip-card-back {
-  background-color: white;
-  color: black;
+  background-color: transparent;
   transform: rotateY(180deg);
   z-index: 1;
 }
 
+/** Signature Styling **/
+
+#footer1 {
+  color: #333;
+  margin-top: 35px;
+}
+h5:hover {
+  transform: scale(2.1);
+}
+
+
+
+/**======================Media Query width=============================**/
+@media screen and (min-width: 645px) {
+
+.card {
+    width: 280px;
+
+}
+}
+
+@media screen and (min-width: 765px){
+.card {
+    width: 340px;
+}
+}
+
+@media screen and (min-width: 1021px){
+.card {
+    width: 470px;
+}
+
+.heading {
+    height: 60%;
+    font-size: 4rem;
+}
+}
+
+@media screen and (min-width: 1230px){
+.card {
+    width: 375px;
+}
+
+.heading {
+    height: 60%;
+    font-size: 4rem;
+}
+}
+
+/**======================Media Query Height=============================**/
+
+@media screen and (min-height: 760px){
+img {
+  height: 220px;
+}
+}
+
+@media screen and (min-height: 780px){
+img {
+  height: 230px;
+}
+}
+
+@media screen and (min-height: 810px){
+img {
+  height: 235px;
+}
+}
+
+@media screen and (min-height: 835px){
+img {
+  height: 245px;
+}
+}
+
+@media screen and (min-height: 870px){
+img {
+  height: 250px;
+}
+}
+
+@media screen and (min-height: 900px){
+img {
+  height: 260px;
+}
+}
+
+@media screen and (min-height: 900px){
+img {
+  height: 270px;
+}
+}
+
+@media screen and (min-height: 970px){
+img {
+  height: 278px;
+}
+}
+
+@media screen and (min-height: 970px){
+img {
+  height: 278px;
+}
+}
+
+@media screen and (min-height: 1000px){
+img {
+  height: 285px;
+}
+}
 
 
 

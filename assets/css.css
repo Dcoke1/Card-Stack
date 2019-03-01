@@ -2,12 +2,11 @@
 
 body {
   width: 100%;
-  background: #31717F;
+  background: rgba(49, 117, 129, 0.5)
 }
 
 h1 {
-  color: #31717f;
-  opacity: .5;
+  color: #31717F;
 }
 h2 {
   color: whitesmoke;
@@ -281,6 +280,7 @@ and (orientation : landscape) {
 #footer1 {
     margin-top: 100px;
 }
+
 }
 
 

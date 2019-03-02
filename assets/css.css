@@ -2,11 +2,11 @@
 
 body {
   width: 100%;
-  background: rgba(49, 117, 129, 0.6);
+  background: rgb(29, 60, 81, 0.65);
 }
 
 h1 {
-  color: #31717F;
+  color: rgb(29, 60, 81);
 }
 h2 {
   color: whitesmoke;
@@ -20,7 +20,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 100px;
-	background-color: whitesmoke !important;
+	background-color: rgb(234, 234, 234, .95);
 	border: outset;
 	z-index: 3; 
 }

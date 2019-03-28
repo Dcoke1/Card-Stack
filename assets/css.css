@@ -1,367 +1,167 @@
 /** ========GLobal Styling ========**/
-
 body {
-  width: 100%;
-  background: rgb(29, 60, 81);
+width: 100%;
+background: rgb(29, 60, 81);
 }
-
 h1 {
-  color: rgb(29, 60, 81);
+color: rgb(29, 60, 81);
 }
 h2 {
-  color: whitesmoke;
-  font-family: fantasy;
-  font-weight: bold;
+color: whitesmoke;
+font-family: fantasy;
+font-weight: bold;
+padding-top: 75px;
 }
-
 header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100px;
-	background-color: rgb(234, 234, 234);
-	border: outset;
-	z-index: 3; 
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100px;
+background-color: rgb(234, 234, 234, .97);
+border: outset;
+z-index: 3; 
 }
-
 /** ========Nav Bar Styling ========**/
 .heading {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  font-family: fantasy;
-  font-weight: bolder;
-  font-size: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  overflow: hidden;
-  z-index: 3;
+position: absolute;
+width: 100%;
+height: 50%;
+font-family: fantasy;
+font-weight: bolder;
+font-size: 3.3rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+overflow: hidden;
+z-index: 3;
 }
-
-
 /** ========Card Container Styling ========**/
 #container {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  flex-direction: row; 
-  margin-top: 100px;   
-  }
-
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+flex-direction: row;
+margin-top: 8rem;  
+}
 /** ========Individual Card Side Styling ========**/  
 img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
-
 .card {
-  background-color: transparent;
-  opacity: .95;
-  margin: 20px;
-  width: 100%;
-  perspective: 1000px;
+background-color: transparent;
+opacity: 0.95;
+margin: 5rem 3rem 0rem 3rem;
+width: 34.5rem;
+height: 20rem;
+perspective: 1000px;
 }
-
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  transition: transform 1.5s;
-  transform-style: preserve-3d;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.65), 0 15px 12px rgba(0,0,0,0.22); 
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+text-align: center;
+vertical-align: middle;
+transition: transform 1s;
+transform-style: preserve-3d;
+box-shadow: 0 19px 38px rgba(0,0,0,0.65), 0 15px 12px rgba(0,0,0,0.22);
 }
-
 .card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+transform: rotateY(180deg);
 }
-
 .flip-card-front, .flip-card-back {
-  position: relative;
-  width: 100%;
-  height: 13vh;
-  backface-visibility: hidden;
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
 }
-
 .flip-card-front {
-  background-color: ;
-  z-index: 1;
+z-index: 1;
 }
-
 .flip-card-back {
-  background-color: transparent;
-  transform: rotateY(180deg);
-  z-index: 1;
+background-color: transparent;
+transform: rotateY(180deg);
+z-index: 1;
 }
-
 /** Signature Styling **/
-
 #footer1 {
-  color: #333;
-  margin-top: 35px;
-  margin-bottom: 50px;
+color: #333;
+margin-top: 45px;
+margin-bottom: 50px;
 }
 h5:hover {
-  transform: scale(2.1);
+transform: scale(2.1);
 }
-
-
-
-/**======================Media Query width=============================**/
-
-@media screen and (max-width: 645px) {
-
-img {
-    height: 195px;
-
-}
-}
-
-
-@media screen and (min-width: 645px) {
-
+/**====================== Media Queries =============================**/
+@media screen and (min-width: 425px) {
 .card {
-    width: 280px;
-
+width: 35.5rem;
 }
-}
-
-@media screen and (min-width: 765px){
+@media screen and (min-width: 525px) {
 .card {
-    width: 340px;
+width: 47rem;
 }
-}
-
-@media screen and (min-width: 1021px){
+@media screen and (min-width: 625px) {
 .card {
-    width: 470px;
+width: 57rem;
 }
-
-.heading {
-    height: 60%;
-    font-size: 4rem;
-}
-}
-
-@media screen and (min-width: 1230px){
+@media screen and (min-width: 725px) {
 .card {
-    width: 375px;
+width: 30rem;
 }
-
-.heading {
-    height: 60%;
-    font-size: 4rem;
-}
-}
-
-
-/**======================Media Query Height=============================**/
-
-
-@media screen and (min-height: 760px){
-img {
-  height: 220px;
-}
-}
-
-@media screen and (min-height: 780px){
-img {
-  height: 230px;
-}
-}
-
-@media screen and (min-height: 810px){
-img {
-  height: 235px;
-}
-}
-
-@media screen and (min-height: 835px){
-img {
-  height: 245px;
-}
-}
-
-@media screen and (min-height: 870px){
-img {
-  height: 250px;
-}
-}
-
-@media screen and (min-height: 900px){
-img {
-  height: 260px;
-}
-}
-
-@media screen and (min-height: 900px){
-img {
-  height: 270px;
-}
-}
-
-@media screen and (min-height: 970px){
-img {
-  height: 278px;
-}
-}
-
-@media screen and (min-height: 970px){
-img {
-  height: 278px;
-}
-}
-
-@media screen and (min-height: 1000px){
-img {
-  height: 286px;
-}
-}
-
-@media screen and (min-height: 1300px){
-img {
-  height: 377px;
-}
-}
-
-/**========***Iphone Landscape Media Query***===========*/
-
-/**Iphone X**/
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : landscape) { 
-#container {
-    margin-top: 30px;
-}
-
-img {
-  height: 200px;
-}
-
+@media screen and (min-width: 768px) {
 .card {
-    margin-top: 100px;
+width: 32rem;
 }
-
-
-.flip-card-front, .flip-card-back {
-    height: 97px;
-}
-
-#footer1 {
-    margin-top: 100px;
-    color: #111;
-}
-}
-
-/**Iphone 6/7/8 Landscape**/
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-and (orientation : landscape) { 
-#container {
-    margin-top: 30px;
-}
-
-img {
-    height: 200px;
-}
-
+@media screen and (min-width: 825px) {
 .card {
-    margin-top: 100px;
-    width: 290px;
+width: 35rem;
 }
-
-.flip-card-front, .flip-card-back {
-    height: 97px;
-}
-
-#footer1 {
-    margin-top: 100px;
-}
-}
-
-/**Iphone 6/7/8 Plus Landscape**/
-@media only screen 
-and (min-device-width : 411px) 
-and (max-device-width : 731px) 
-and (orientation : landscape) { 
-#container {
-    margin-top: 30px;
-}
-
+@media screen and (min-width: 925px) {
 .card {
-    margin-top: 100px;
-    width: 292px;
+width: 40rem;
 }
-
-img {
-  height: 200px;
-}
-
-.flip-card-front, .flip-card-back {
-    height: 97px;
-}
-
-#footer1 {
-    margin-top: 100px;
-}
-}
-
-/**Iphone 6/7/8 Plus Portrait**/
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) 
-and (orientation : portrait) { 
-
-  img {
-  height: 212px;
-  } 
-}
-
-/** Google Pixel 2 Landscape **/
-@media only screen 
-and (min-device-width : 411px) 
-and (max-device-width : 823px) 
-and (orientation : landscape) {
-#container {
-  margin-top: 115px;
-}
-
+@media screen and (min-width: 1000px) {
 .card {
-  margin-bottom: 20px;
-  margin: 20px;
+width: 44rem;
 }
-
-.flip-card-inner {
-  height: 200px;
+@media screen and (min-width: 1024px) {
+.card {
+width: 45rem;
 }
+@media screen and (min-width: 1080px) {
+.card {
+width: 48rem;
+height: 25rem;
 }
-
-/** Google Pixel 2 Portrait **/
-@media only screen 
-and (min-device-width : 411px) 
-and (max-device-width : 731px) 
-and (orientation : portrait) {
-img {
-  height: 215px;
+h2{
+padding-top: 100px;
 }
+@media screen and (min-width: 1180px) {
+.card {
+width: 53rem;
+height: 25rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (min-width: 1230px) {
+.card {
+width: 35rem;
+}
+@media screen and (min-width: 1330px) {
+.card {
+width: 38rem;
+}
+@media screen and (min-width: 1440px) {
+.card {
+width: 42rem;
+}
+@media screen and (min-width: 1630px) {
+.card {
+width: 48rem;
+}

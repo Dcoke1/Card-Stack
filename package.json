@@ -1,0 +1,29 @@
+{
+  "name": "card-stack",
+  "version": "1.0.0",
+  "description": "travel the world through each card stack! hover over a card to see the destination then click the name to find out something special!",
+  "main": "index.html",
+  "dependencies": {
+    "autoprefixer-core": "^6.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "postcss-loader": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dcoke1/card_stack.git"
+  },
+  "keywords": [
+    "#webdevelopment"
+  ],
+  "author": "Douglas Coke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dcoke1/card_stack/issues"
+  },
+  "homepage": "https://github.com/Dcoke1/card_stack#readme"
+}
